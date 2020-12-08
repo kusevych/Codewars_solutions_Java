@@ -37,13 +37,10 @@ package kyu7;
 class DivSeven {
     public static long[] seven(long m) {
         int count = 0;
-        long[] arr = new long[2];
         while (m > 99) {
             m = m / 10 - 2 * (m % 10);
             count++;
         }
-        arr[0] = m;
-        arr[1] = count;
-        return arr;
+        return new long[] {m, count};
     }
 }
