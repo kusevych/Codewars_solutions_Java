@@ -29,3 +29,19 @@ class Vowels2 {
         return str.replaceAll("[^aeiou]","").length();
     }
 }
+
+class Vowels3 {
+    public static int getCount(String str) {
+        int vowelsCount = 0;
+        char[] arrString = str.toCharArray();
+        char[] arrVowels = {'a', 'e', 'i', 'o', 'u'};
+        for (int i = 0; i < arrString.length; i++) {
+            for (int j = 0; j < arrVowels.length; j++) {
+                if (arrString[i] == arrVowels[j]) {
+                    vowelsCount++;
+                }
+            }
+        }
+        return vowelsCount;
+    }
+}
