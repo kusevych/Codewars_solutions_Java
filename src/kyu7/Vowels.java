@@ -23,3 +23,9 @@ public class Vowels {
         return vowelsCount;
     }
 }
+
+class Vowels2 {
+    public static int getCount(String str) {
+        return str.replaceAll("[^aeiou]","").length();
+    }
+}
