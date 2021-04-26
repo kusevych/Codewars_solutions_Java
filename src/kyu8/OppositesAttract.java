@@ -11,7 +11,7 @@ they aren't.
 
 package kyu8;
 
-public class OppositeAbstract {
+public class OppositesAttract {
     public static boolean isLove(final int flower1, final int flower2) {
         return (flower1 + flower2) % 2 != 0;
     }
@@ -20,5 +20,11 @@ public class OppositeAbstract {
 class OppositesAttract2 {
     public static boolean isLove(final int flower1, final int flower2) {
         return flower1 % 2 != flower2 % 2;
+    }
+}
+
+class OppositesAttract3 {
+    public static boolean isLove(final int flower1, final int flower2) {
+        return (flower1 % 2 == 0 && flower2 % 2 == 1) || (flower1 % 2 == 1 && flower2 % 2 == 0);
     }
 }
