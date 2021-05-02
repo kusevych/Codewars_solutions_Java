@@ -18,3 +18,9 @@ public class Solution {
         return sb.toString();
     }
 }
+
+class Solution1 {
+    public static String repeatStr(final int repeat, final String string) {
+        return string.repeat(repeat);
+    }
+}
