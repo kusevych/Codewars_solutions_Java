@@ -21,3 +21,9 @@ public class Upper {
         return sb.toString();
     }
 }
+
+class Upper1 {
+    public static String MakeUpperCase(String str){
+        return str.toUpperCase();
+    }
+}
