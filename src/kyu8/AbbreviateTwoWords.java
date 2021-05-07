@@ -12,11 +12,21 @@ Sam Harris => S.H
 
 Patrick Feeney => P.F
  */
+
 package kyu8;
 
 public class AbbreviateTwoWords {
     public static String abbrevName(String name) {
         int spaceInd = name.indexOf(' ');
         return Character.toUpperCase(name.charAt(0)) + "." + Character.toUpperCase(name.charAt(spaceInd + 1));
+    }
+}
+
+class AbbreviateTwoWords1 {
+    public static String abbrevName(String name) {
+        StringBuilder sb = new StringBuilder();
+        int indOfSpase = name.indexOf(" ");
+        sb.append(name.charAt(0)).append(".").append(name.charAt(indOfSpase + 1));
+        return sb.toString().toUpperCase();
     }
 }
