@@ -19,3 +19,9 @@ public class Kata4 {
         return  "Position of alphabet: " + (alph.indexOf(alphabet) + 1);
     }
 }
+
+class Kata4a {
+    public static String position(char alphabet) {
+        return "Position of alphabet: " + ((int) alphabet - 96);
+    }
+}
