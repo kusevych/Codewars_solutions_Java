@@ -25,9 +25,3 @@ class Kata4a {
         return "Position of alphabet: " + ((int) alphabet - 96);
     }
 }
-
-class Kata4b {
-    public static String position(char alphabet) {
-        return "Position of alphabet: " + (alphabet - 'a' + 1);
-    }
-}
