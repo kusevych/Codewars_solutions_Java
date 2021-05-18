@@ -14,6 +14,7 @@ Note: You can expect all of the inputs to be the same length.
 package kyu8;
 
 public class Kata5 {
+    // it's better to use StringBuilder
     public static String tripleTrouble(String one, String two, String three) {
         String result = "";
         for (int i = 0; i < one.length(); i++) {
@@ -25,6 +26,7 @@ public class Kata5 {
 
 class Kata5a {
     public static String tripleTrouble(String one, String two, String three) {
+        // it's better to use StringBuilder
         String result = "";
         for (int i = 0; i < one.length(); i++) {
             result += one.charAt(i);
